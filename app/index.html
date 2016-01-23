@@ -35,7 +35,7 @@
                 Specjalnosc: <strong>{{user.specjalnosc.name}}</strong><br>
               </h4>
               <h4>
-                Programy: <br><h5><strong><span ng-repeat="ulu in user.ulubione">{{ulu.name}}  </span></strong></h5><br>
+                Programy: <br><h5><strong><span ng-repeat="ulu in user.ulubione">{{ulu.name}}  </span></h5></strong><br>
               </h4>
               <h4>
                 Staż: <strong>{{ user.staz.name }}</strong><br>
@@ -46,9 +46,9 @@
         </div>
       </div>
 
-      <form ng-hide="formSave" ng-submit="formSave = true" novalidate>
+      <form ng-hide="formSave" ng-submit="formSave = true" class="background" novalidate>
       <div class="text-left">
-
+          <h2>Załóż konto</h2>
           <br>
           <strong>Login: </strong>
           <input class="form-control" type="text" ng-model="user.login" ng-focus="komunikat = true" ng-blur="komunikat = false">
